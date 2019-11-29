@@ -22,7 +22,11 @@
           <p>{{ error }}</p>
           <p>Хайлтын илэрц</p>
           <ol>
-            <li v-for="c in cos" :key="c.doc">doc: {{c.doc}}, cos: {{ c.cos }}</li>
+            <li v-for="c in cos" :key="c.doc">
+              doc: {{c.doc}}, cos: {{ c.cos }}
+              <br />
+              {{ docs[c.doc - 1] }}
+            </li>
           </ol>
 
           <div>
